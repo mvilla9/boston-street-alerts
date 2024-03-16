@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ProfileView: View {
-    var username: String
     var body: some View {
         List {
             HStack {
@@ -17,7 +16,7 @@ struct ProfileView: View {
                     .background(Color.gray)
                     .clipShape(Circle())
                 VStack (alignment: .leading){
-                    Text(username)
+                    Text("John Doe")
                     Text("Member since 2024")
                         .font(.subheadline)
                         .italic()
@@ -37,6 +36,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(username: "John Doe")
+        ProfileView()
     }
 }
